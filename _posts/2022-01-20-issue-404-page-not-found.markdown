@@ -22,11 +22,11 @@ git push origin master
 위의 과정을 거쳐 Github에 업로드 하였다.
 
 ## 2. 404 Page not found
- 이후 현재 블로그 주소인 <https://ymiwm.github.io/> 로 접속하였으나...  
-![404 Error](/assets/images/2021/01/20/404_Error.jpg)
+ 이후 현재 블로그 주소인 <https://ymiwm.github.io/>{:target="_blank"}로 접속하였으나...  
+![404 Error](/assets/images/2022/01/20/404_Error.jpg)
 
 ## 3. 해결법
- 이와 관련하여 [Stack overflow<sup>1</sup>](#6-참조한-자료)를 통해 찾아낸 방법은 아래와 같았다.
+ 이와 관련하여 [Stack overflow<sup>1</sup>](https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages/45907768#45907768){:target="_blank"}를 통해 찾아낸 방법은 아래와 같았다.
 {% highlight console %}
 git commit --allow-empty -m "Trigger rebuild"
 git push
@@ -37,9 +37,9 @@ git push
  위 과정을 통해 404 Page not found 문제는 해결하였으나 의문점이 많이 남았다.  
 이후 의문이 해결된다면 보강할 예정이다.
 
-1. 이러한 현상이 생기는 이유
-2. 빈 상태를 `commit`, `push`하였을 때 github에서 생기는 변화
-3. 블로그의 정상적인 동작에 필요한 조건
+ 1. 이러한 현상이 생기는 이유
+ 2. 빈 상태를 `commit`, `push`하였을 때 github에서 생기는 변화
+ 3. 블로그의 정상적인 동작에 필요한 조건
 
 ## 5. 해답
  1. WIP

@@ -1,0 +1,6 @@
+Algorithm
+down: 6
+width: 1470
+height: 850
+x: 210
+y: 170
