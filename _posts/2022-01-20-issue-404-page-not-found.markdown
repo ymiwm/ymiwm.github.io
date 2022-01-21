@@ -2,7 +2,7 @@
 layout: post
 title:  "[Issue] Jekyll 블로그 Github 업로드 시 404 Page not found"
 date:   2022-01-20 09:00:00 +0900
-categories: jekyll github
+categories: jekyll blog
 ---
 # 목차
 1. [Localhost에서 Github로...!](#1-localhost에서-github로)
