@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+# Disallow: /
+
+Sitemap: https://ymiwm.github.io/sitemap.xml
