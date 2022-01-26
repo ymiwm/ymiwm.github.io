@@ -38,7 +38,7 @@ URL을 등록한 후 Tracking ID를 블로그 `root`폴더의 `_config.yml`에 �
 이 글을 쓰기 전부터 조금 시도는 해보았는데, 이래저래 시행착오가 많다.  
 하나씩 정리될 때마다 추가적으로 업데이트 할 예정이다.
 
-## 7. Link
+## 6. Link
 *1. Google Search Console*  
 <https://search.google.com/search-console?hl=ko>{:target="_blank"}  
 *2. Google Analystics*  
