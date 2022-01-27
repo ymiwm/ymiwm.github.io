@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Algorithm] BOJ1000 - A + B"
+title:  "[Algorithm] BOJ1000 - A+B"
 date:   2022-01-22 02:00:00 +0900
 categories: jekyll blog
 ---
@@ -23,9 +23,11 @@ Compiler: `C++20`
 
 ## 3. 접근법
 알고리즘 분류
+ * 수학
+ * 구현
  * 사칙연산
 
-단순하게 A + B를 출력하는 문제 그대로 구현해준다.
+단순하게 A+B를 출력하는 문제 그대로 구현해준다.
 
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
@@ -72,7 +74,7 @@ void output()
 단 제한 조건이 까다로워질 경우 int 타입이 아닌 long 타입 혹은 문자열을 고려하자.
 
 ## 7. Link
-*1. BOJ1000*  
+*1. BOJ1000 - A+B*  
 <https://www.acmicpc.net/problem/1000>{:target="_blank"}  
 *2. bits/stdc++.h*  
 <https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
