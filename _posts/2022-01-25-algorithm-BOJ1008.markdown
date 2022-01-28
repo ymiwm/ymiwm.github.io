@@ -1,0 +1,121 @@
+---
+layout: post
+title:  "[Algorithm] BOJ1008 - A/B"
+date:   2022-01-25 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/1008){:target="_blank"}
+![BOJ1000](/assets/images/2022/01/25/BOJ1008.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 수학
+ * 구현
+ * 사칙연산
+
+A/B를 구한다. 단 정수형이 아닌 실수형으로 표현해야하며,  
+절대/상대오차가 1e-9이하이어야 함에 주의해야 한다.  
+따라서 Data type로 `double`을 사용하고, `std::fixed`로 소수점 고정,  
+`std::ios_base::precision`로 소수점 자리수 결정을 해주어야 한다.  
+(좀 더 Formal한 방법은 주석으로 처리하였고, 간단한 방법으로 코드를 작성하였다.  
+추가적으로 `std::ios_base::unsetf(set::ios::fixed)`와  
+초기에 `precision`의 `streamsize`를 변수에 저장하여  
+`precision`함수를 다시 호출함으로 위 과정을 해제해 줄 수 있다.)  
+
+추가적으로 답안 출력시 위와 같은 복잡한 과정을 거치지 않고  
+`stdio.h`의 `printf`를 사용하면 위 과정을 짧게 축약할 수 있다.  
+(`output`함수의 마지막 주석 `Ver.printf` 참조)
+
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)  
+`std::iostream` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/istream/iostream/?kw=iostream){:target="_blank"}  
+`std::iostream - std::fixed` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/ios/fixed/){:target="_blank"}  
+`std::iostream - std::ios_base::precision` - [Link<sup>5</sup>](https://www.cplusplus.com/reference/ios/ios_base/precision/){:target="_blank"}  
+`std::iostream - std::ios_base::setf` - [Link<sup>6</sup>](https://www.cplusplus.com/reference/ios/ios_base/setf/?kw=setf){:target="_blank"}  
+`std::iostream - std::ios_base::unsetf` - [Link<sup>7</sup>](https://www.cplusplus.com/reference/ios/ios_base/unsetf/?kw=unsetf){:target="_blank"}  
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+double A, B, res;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    input();
+    func();
+    output();
+}
+
+void input()
+{
+    cin >> A >> B;
+}
+
+void func()
+{
+    res = A / B;
+}
+
+void output()
+{
+    // cout.setf(ios::fixed, ios::floatfield);
+    streamsize default_precision = cout.precision();
+    cout << fixed;
+    cout.precision(9);
+    cout << res << '\n';
+    cout.unsetf(ios::fixed);
+    cout.precision(default_precision);
+    // cout.unsetf(ios::floatfield);    
+
+    // Ver.printf
+    // printf(".9lf\n", res);
+}
+```
+
+## 6. 정리
+C++의 iostream의 규격에 맞추다보니 출력부분에서 장황해진 부분이 있다.  
+문제의 티어를 보았을 때, `Python`혹은 `C`에 중점을 둔 것 같다는 생각이 든다.  
+함수와 함께 다양한 표기법을 알아두는 것에 도움이 되니 관심이 있다면 한번쯤  
+링크를 참조하여 공부해보는 것도 좋을 것 같다.
+
+## 7. Link
+*1. BOJ1008 - A/B*  
+<https://www.acmicpc.net/problem/1008>{:target="_blank"}  
+*3. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. iostream*  
+<https://www.cplusplus.com/reference/istream/iostream/?kw=iostream>{:target="_blank"}  
+*4. std::fixed*  
+<https://www.cplusplus.com/reference/ios/fixed/>{:target="_blank"}  
+*5. std::ios_base::precision*  
+<https://www.cplusplus.com/reference/ios/ios_base/precision/>{:target="_blank"}  
+*6. std::ios_base::setf*  
+<https://www.cplusplus.com/reference/ios/ios_base/setf/?kw=setf>{:target="_blank"}  
+*7. std::ios_base::unsetf*  
+<https://www.cplusplus.com/reference/ios/ios_base/unsetf/?kw=unsetf>{:target="_blank"}  
+*8. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
