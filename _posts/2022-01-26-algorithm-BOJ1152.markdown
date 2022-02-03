@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "[Algorithm] BOJ1152 - 단어의 개수"
+date:   2022-01-26 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/1152){:target="_blank"}
+![BOJ1008](/assets/images/2022/01/26/BOJ1152.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 구현
+ * 문자열
+
+공백의 개수를 이용하여 단어의 개수를 구한다.  
+단, 문제의 조건에 따라 처음과 마지막에 공백이 올 수 있다는 점에 유의한다.  
+또한 표준 입력인 `cin`을 사용하면 띄어쓰기를 기준으로 부분만을 입력받기에  
+줄 단위의 입력을 받을 수 있는 `getline`을 이용한다.  
+처음과 마지막 공백을 제외한 공백의 개수를 센 값에 1을 더한 값을 구한다.
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)  
+`string` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/string/){:target="_blank"}  
+`string - std::getline` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/string/string/getline/){:target="_blank"}  
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int res;
+string str;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    input();
+    func();
+    output();
+}
+
+void input()
+{
+    getline(cin, str);
+}
+
+void func()
+{
+    if(str == " ")
+        return;
+    else
+    {
+        // Ver.Clean
+        for(int i = 0; i < str.size(); i++)
+            if((i != 0 && i != str.size() - 1) && str.at(i) == ' ')
+                res++;
+        // Ver.Fast
+        /*
+        for(int i = 0; i < str.size(); i++)
+        {
+            if((i == 0 || i == str.size() - 1) && str.at(i) == ' ')
+                continue;
+            else if(str.at(i) == ' ')
+                res++;
+        }
+        */
+        res++;
+    }
+}
+
+void output()
+{
+    cout << res << '\n';
+}
+```
+
+## 6. 정리
+입력 방식과 문자열 처리에 신경써주면 되는 문제였다.
+
+## 7. Link
+*1. BOJ1152 - 단어의 개수*  
+<https://www.acmicpc.net/problem/1152>{:target="_blank"}  
+*3. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. string*  
+<https://www.cplusplus.com/reference/string/>{:target="_blank"}  
+*4. std::getline*  
+<https://www.cplusplus.com/reference/string/string/getline/>{:target="_blank"}  
+*5. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
