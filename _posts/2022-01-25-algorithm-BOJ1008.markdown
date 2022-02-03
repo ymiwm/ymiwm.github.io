@@ -40,16 +40,15 @@ A/B를 구한다. 단 정수형이 아닌 실수형으로 표현해야하며,
 `stdio.h`의 `printf`를 사용하면 위 과정을 짧게 축약할 수 있다.  
 (`output`함수의 마지막 주석 `Ver.printf` 참조)
 
-
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
 (GNU C++ Standard Library Header - X)  
 (GCC Compiler Header - O)  
-`std::iostream` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/istream/iostream/?kw=iostream){:target="_blank"}  
-`std::iostream - std::fixed` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/ios/fixed/){:target="_blank"}  
-`std::iostream - std::ios_base::precision` - [Link<sup>5</sup>](https://www.cplusplus.com/reference/ios/ios_base/precision/){:target="_blank"}  
-`std::iostream - std::ios_base::setf` - [Link<sup>6</sup>](https://www.cplusplus.com/reference/ios/ios_base/setf/?kw=setf){:target="_blank"}  
-`std::iostream - std::ios_base::unsetf` - [Link<sup>7</sup>](https://www.cplusplus.com/reference/ios/ios_base/unsetf/?kw=unsetf){:target="_blank"}  
+`iostream` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/istream/iostream/?kw=iostream){:target="_blank"}  
+`iostream - std::fixed` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/ios/fixed/){:target="_blank"}  
+`iostream - std::ios_base::precision` - [Link<sup>5</sup>](https://www.cplusplus.com/reference/ios/ios_base/precision/){:target="_blank"}  
+`iostream - std::ios_base::setf` - [Link<sup>6</sup>](https://www.cplusplus.com/reference/ios/ios_base/setf/?kw=setf){:target="_blank"}  
+`iostream - std::ios_base::unsetf` - [Link<sup>7</sup>](https://www.cplusplus.com/reference/ios/ios_base/unsetf/?kw=unsetf){:target="_blank"}
 
 ## 5. Code
 ```cpp
