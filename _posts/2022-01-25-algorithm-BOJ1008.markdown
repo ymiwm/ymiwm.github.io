@@ -44,11 +44,11 @@ A/B를 구한다. 단 정수형이 아닌 실수형으로 표현해야하며,
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
 (GNU C++ Standard Library Header - X)  
 (GCC Compiler Header - O)  
-`iostream` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/istream/iostream/?kw=iostream){:target="_blank"}  
+`iostream` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/iostream/){:target="_blank"}  
 `iostream - std::fixed` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/ios/fixed/){:target="_blank"}  
 `iostream - std::ios_base::precision` - [Link<sup>5</sup>](https://www.cplusplus.com/reference/ios/ios_base/precision/){:target="_blank"}  
-`iostream - std::ios_base::setf` - [Link<sup>6</sup>](https://www.cplusplus.com/reference/ios/ios_base/setf/?kw=setf){:target="_blank"}  
-`iostream - std::ios_base::unsetf` - [Link<sup>7</sup>](https://www.cplusplus.com/reference/ios/ios_base/unsetf/?kw=unsetf){:target="_blank"}
+`iostream - std::ios_base::setf` - [Link<sup>6</sup>](https://www.cplusplus.com/reference/ios/ios_base/setf/){:target="_blank"}  
+`iostream - std::ios_base::unsetf` - [Link<sup>7</sup>](https://www.cplusplus.com/reference/ios/ios_base/unsetf/){:target="_blank"}
 
 ## 5. Code
 ```cpp
@@ -107,14 +107,14 @@ C++의 iostream의 규격에 맞추다보니 출력부분에서 장황해진 부
 *3. bits/stdc++.h*  
 <https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
 *3. iostream*  
-<https://www.cplusplus.com/reference/istream/iostream/?kw=iostream>{:target="_blank"}  
+<https://www.cplusplus.com/reference/iostream/>{:target="_blank"}  
 *4. std::fixed*  
 <https://www.cplusplus.com/reference/ios/fixed/>{:target="_blank"}  
 *5. std::ios_base::precision*  
 <https://www.cplusplus.com/reference/ios/ios_base/precision/>{:target="_blank"}  
 *6. std::ios_base::setf*  
-<https://www.cplusplus.com/reference/ios/ios_base/setf/?kw=setf>{:target="_blank"}  
+<https://www.cplusplus.com/reference/ios/ios_base/setf/>{:target="_blank"}  
 *7. std::ios_base::unsetf*  
-<https://www.cplusplus.com/reference/ios/ios_base/unsetf/?kw=unsetf>{:target="_blank"}  
+<https://www.cplusplus.com/reference/ios/ios_base/unsetf/>{:target="_blank"}  
 *8. Cplusplus.com*  
 <https://www.cplusplus.com/reference/>{:target="_blank"}
