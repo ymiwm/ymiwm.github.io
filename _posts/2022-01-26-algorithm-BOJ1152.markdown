@@ -37,7 +37,7 @@ Compiler: `C++20`
 (GNU C++ Standard Library Header - X)  
 (GCC Compiler Header - O)  
 `string` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/string/){:target="_blank"}  
-`string - std::getline` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/string/string/getline/){:target="_blank"}  
+`string - std::getline` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/string/string/getline/){:target="_blank"}
 
 ## 5. Code
 ```cpp
