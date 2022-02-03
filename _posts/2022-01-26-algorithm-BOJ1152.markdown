@@ -19,7 +19,7 @@ Compiler: `C++20`
 
 ## 2. 문제
 [Link<sup>1</sup>](https://www.acmicpc.net/problem/1152){:target="_blank"}
-![BOJ1008](/assets/images/2022/01/26/BOJ1152.jpg)
+![BOJ1152](/assets/images/2022/01/26/BOJ1152.jpg)
 
 ## 3. 접근법
 알고리즘 분류
