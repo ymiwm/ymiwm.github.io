@@ -30,7 +30,7 @@ Compiler: `C++20`
 단, 문제의 조건에 따라 처음과 마지막에 공백이 올 수 있다는 점에 유의한다.  
 또한 표준 입력인 `cin`을 사용하면 띄어쓰기를 기준으로 부분만을 입력받기에  
 줄 단위의 입력을 받을 수 있는 `getline`을 이용한다.  
-처음과 마지막 공백을 제외한 공백의 개수를 센 값에 1을 더한 값을 구한다.
+처음과 마지막 공백을 제외한 공백의 개수에 1을 더한 값을 구한다.
 
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
