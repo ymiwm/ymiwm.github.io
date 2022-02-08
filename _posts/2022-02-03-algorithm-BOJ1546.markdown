@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "[Algorithm] BOJ1546 - 평균"
+date:   2022-02-03 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/1546){:target="_blank"}
+![BOJ1000](/assets/images/2022/02/03/BOJ1546.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 수학
+ * 사칙연산
+
+평균을 구할 때 분모를 100이 아닌 성적 중 최댓값으로 치환해주면 되는 문제이다.  
+[BOJ1008 - A/B](https://https://ymiwm.github.io/jekyll/blog/2022/01/25/algorithm-BOJ1008.html)처럼 소수점 출력에 있어 특정한 조건이 주어진다면  
+`printf`를 사용하는 방법도 고려할만하다.  
+하지만 이번 문제는 절대/상대오차가 1e-2이고, 소수 출력시 관여하는 `precision`은  
+기본적으로 6으로 설정되어있으며, 성적은 정수부가 3글자인 100인 경우밖에 없고,  
+2글자인 경우는 소수점 밑으로 4번째 자리까지 표기되고, 1글자는 5번째 자리까지 표기된다.  
+따라서 `double`을 사용하고 그대로 출력해주면 된다.
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int N, M;
+double numerator, denominator, res;
+vector<int> v;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    input();
+    func();
+    output();
+}
+
+void input()
+{
+    int val;
+    cin >> N;
+    for(int i = 0; i < N; i++)
+    {
+        cin >> val;
+        numerator += val;
+        v.push_back(val);
+        if(M < val)
+            M = val;
+    }
+}
+
+void func()
+{
+    denominator = M;
+    denominator *= N;
+    res = numerator / denominator * 100;
+}
+
+void output()
+{
+    cout << res << '\n';
+}
+```
+
+## 6. 정리
+Data type에 의해 실수형 데이터가 정수형으로 표현되는 것에 주의하면 되는 문제이다.
+
+## 7. Link
+*1. BOJ1546 - 평균*  
+<https://www.acmicpc.net/problem/1152>{:target="_blank"}  
+*2. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
