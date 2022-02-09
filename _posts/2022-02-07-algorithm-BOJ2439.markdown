@@ -83,7 +83,7 @@ void output()
 
 ## 7. Link
 *1. BOJ2439 - 별 찍기 - 2*  
-<https://www.acmicpc.net/problem/1152>{:target="_blank"}  
+<https://www.acmicpc.net/problem/2439>{:target="_blank"}  
 *2. bits/stdc++.h*  
 <https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
 *3. Cplusplus.com*  
