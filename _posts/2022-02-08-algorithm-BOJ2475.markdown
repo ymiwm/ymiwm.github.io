@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "[Algorithm] BOJ2475 - 검증수"
+date:   2022-02-08 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/2475){:target="_blank"}
+![BOJ2475](/assets/images/2022/02/08/BOJ2475.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 수학
+ * 구현
+ * 사칙연산
+
+제곱수를 더하고 10으로 나누면 된다.  
+`pow`를 고려할 수도 있겠지만 단순한 제곱수이므로  
+함수를 호출할 것 없이 곱셈으로 처리해준다.
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int num, res;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    input();
+    func();
+    output();
+}
+
+void input()
+{
+    int val;
+    for(int i = 0; i < 5; i++)
+    {
+        cin >> val;
+        num += val * val;
+    }
+}
+
+void func()
+{
+    res = num % 10;
+}
+
+void output()
+{
+    cout << res << '\n';
+}
+```
+
+## 6. 정리
+수의 크기를 예상하여 Data type을 결정하는 것에 한번 더 유의한다.
+
+## 7. Link
+*1. BOJ2475 - 검증수*  
+<https://www.acmicpc.net/problem/2475>{:target="_blank"}  
+*2. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
