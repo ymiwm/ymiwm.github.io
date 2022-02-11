@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "[Algorithm] BOJ2577 - 숫자의 개수"
+date:   2022-02-11 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/2577){:target="_blank"}
+![BOJ2577](/assets/images/2022/02/11/BOJ2577.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 수학
+ * 구현
+ * 사칙연산
+
+`A`, `B`, `C`가 모두 1000보다 작으므로 셋을 곱한 값 `N`은 `int`범위 안이라는 점을 유념한다.  
+`N`을 `int`형태에서 10씩 나머지, 나누기 처리를 하여 푸는 방식도 있지만,  
+조금 더 직관적으로 `string`형식으로 바꾸어 풀었다.
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int arr[10];
+string str;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    input();
+    func();
+    output();
+}
+
+void input()
+{
+    int A, B, C, N;
+    cin >> A;
+    cin >> B;
+    cin >> C;
+    N = A * B * C;
+    str = to_string(N);
+}
+
+void func()
+{
+    for(int i = 0; i < str.size(); i++)
+        arr[str.at(i) - '0']++;
+}
+
+void output()
+{
+    for(int i = 0; i < 10; i++)
+        cout << arr[i] << '\n';
+}
+```
+
+## 6. 정리
+뇌피셜이지만 수가 커질수록 `int`타입으로 처리하는 방식은  
+연산에 대한 부하가 커질 것이라 생각되어진다.  
+여러가지 라이브러리를 익혀 잘 써먹을 수 있도록 하자.
+
+## 7. Link
+*1. BOJ2577 - 숫자의 개수*  
+<https://www.acmicpc.net/problem/2577>{:target="_blank"}  
+*2. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
