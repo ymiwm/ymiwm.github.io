@@ -34,7 +34,7 @@ Compiler: `C++20`
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
 (GNU C++ Standard Library Header - X)  
-(GCC Compiler Header - O)
+(GCC Compiler Header - O)  
 `string` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/string/){:target="_blank"}  
 `string - to_string` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/string/to_string/){:target="_blank"}
 
