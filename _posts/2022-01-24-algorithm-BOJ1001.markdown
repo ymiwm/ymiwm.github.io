@@ -27,7 +27,7 @@ Compiler: `C++20`
  * 구현
  * 사칙연산
 
-단순하게 A-B를 출력하는 문제 그대로 구현해준다.
+단순하게 `A-B`를 출력하는 문제 그대로 구현해준다.
 
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
@@ -71,7 +71,7 @@ void output()
 
 ## 6. 정리
 문제 제한 조건이 단순하여 그대로 구현하면 되는 문제였다.  
-단 제한 조건이 까다로워질 경우 int 타입이 아닌 long 타입 혹은 문자열을 고려하자.
+단 제한 조건이 까다로워질 경우 `int`타입이 아닌 `long`타입 혹은 `char`와 `string`을 고려하자.
 
 ## 7. Link
 *1. BOJ1001 - A-B*  

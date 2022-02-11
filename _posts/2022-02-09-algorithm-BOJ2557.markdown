@@ -25,7 +25,7 @@ Compiler: `C++20`
 알고리즘 분류
  * 구현
 
-Hello World!  
+Hello World!
 
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  

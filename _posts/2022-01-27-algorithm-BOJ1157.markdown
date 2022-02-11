@@ -40,7 +40,7 @@ Compiler: `C++20`
 
 using namespace std;
 
-int arr[26], maxval, idx;
+int arr[26];
 char res;
 bool flag;
 string str;
@@ -63,6 +63,7 @@ void input()
 
 void func()
 {
+    int maxval = 0, idx;
     for(int i = 0; i < str.size(); i++)
     {
         if(str.at(i) <= 'Z')

@@ -72,11 +72,11 @@ void input()
         if(M < val)
             M = val;
     }
+    denominator = M;
 }
 
 void func()
 {
-    denominator = M;
     denominator *= N;
     res = numerator / denominator * 100;
 }
