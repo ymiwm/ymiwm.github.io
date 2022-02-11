@@ -35,6 +35,8 @@ Compiler: `C++20`
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
 (GNU C++ Standard Library Header - X)  
 (GCC Compiler Header - O)
+`string` - [Link<sup>3</sup>](https://www.cplusplus.com/reference/string/){:target="_blank"}  
+`string - to_string` - [Link<sup>4</sup>](https://www.cplusplus.com/reference/string/to_string/){:target="_blank"}
 
 ## 5. Code
 ```cpp
@@ -89,5 +91,9 @@ void output()
 <https://www.acmicpc.net/problem/2577>{:target="_blank"}  
 *2. bits/stdc++.h*  
 <https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
-*3. Cplusplus.com*  
+*3. string*  
+<https://www.cplusplus.com/reference/string/>{:target="_blank"}  
+*4. std::to_string*  
+<https://www.cplusplus.com/reference/string/to_string/>{:target="_blank"}  
+*5. Cplusplus.com*  
 <https://www.cplusplus.com/reference/>{:target="_blank"}
