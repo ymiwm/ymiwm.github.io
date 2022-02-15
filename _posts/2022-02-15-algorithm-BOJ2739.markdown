@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "[Algorithm] BOJ2739 - 구구단"
+date:   2022-02-15 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/2739){:target="_blank"}
+![BOJ2739](/assets/images/2022/02/15/BOJ2739.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 수학
+ * 구현
+ * 사칙연산
+
+`for`문의 대표적인 예제이다.
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)  
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int N;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    input();
+    func();
+    output();
+}
+
+void input()
+{
+    cin >> N;
+}
+
+void func()
+{
+    
+}
+
+void output()
+{
+    for(int i = 1; i < 10; i++)
+        cout << N << " * " << i << " = " << N * i << '\n';
+}
+```
+
+## 6. 정리
+출력 조건을 잘 확인하자.
+
+## 7. Link
+*1. BOJ2739 - 구구단*  
+<https://www.acmicpc.net/problem/2739>{:target="_blank"}  
+*2. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
