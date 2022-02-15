@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "[Algorithm] BOJ2675 - 문자열 반복"
+date:   2022-02-14 15:00:00 +0900
+categories: jekyll blog
+---
+### 목차
+1. [환경](#1-환경)
+2. [문제](#2-문제)
+3. [접근법](#3-접근법)
+4. [Library](#4-library)
+5. [Code](#5-code)
+6. [정리](#6-정리)
+7. [Link](#7-link)
+
+## 1. 환경
+Editor: `Microsoft Visual Studio Code`  
+Compiler: `C++20`
+
+## 2. 문제
+[Link<sup>1</sup>](https://www.acmicpc.net/problem/2675){:target="_blank"}
+![BOJ2675](/assets/images/2022/02/14/BOJ2675.jpg)
+
+## 3. 접근법
+알고리즘 분류
+ * 구현
+ * 문자열
+
+단순 구현 문제이다.
+
+## 4. Library
+`bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
+(GNU C++ Standard Library Header - X)  
+(GCC Compiler Header - O)  
+
+## 5. Code
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int T, R;
+string S, P;
+
+void input();
+void func();
+void output();
+
+int main(void)
+{
+    cin >> T;
+    for(int i = 0; i < T; i++)
+    {
+        input();
+        func();
+        output();
+    }
+}
+
+void input()
+{
+    cin >> R >> S;
+}
+
+void func()
+{
+    for(int i = 0; i < S.size(); i++)
+        for(int j = 0; j < R; j++)
+            P += S.at(i);
+}
+
+void output()
+{
+    cout << P << '\n';
+    P.clear();
+}
+```
+
+## 6. 정리
+Test Case가 주어지는 문제이므로,  
+코드와 같이 `P`에 문자를 누적해 가는 경우  
+`string`의 `clear`를 호출하여 문자열을 비워주어야 한다.
+
+## 7. Link
+*1. BOJ2675 - 문자열 반복*  
+<https://www.acmicpc.net/problem/2675>{:target="_blank"}  
+*2. bits/stdc++.h*  
+<https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html>{:target="_blank"}  
+*3. Cplusplus.com*  
+<https://www.cplusplus.com/reference/>{:target="_blank"}
