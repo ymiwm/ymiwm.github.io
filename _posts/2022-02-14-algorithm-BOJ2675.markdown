@@ -31,7 +31,7 @@ Compiler: `C++20`
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
 (GNU C++ Standard Library Header - X)  
-(GCC Compiler Header - O)  
+(GCC Compiler Header - O)
 
 ## 5. Code
 ```cpp

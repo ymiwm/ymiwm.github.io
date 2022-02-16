@@ -19,7 +19,7 @@ Compiler: `C++20`
 
 ## 2. 문제
 [Link<sup>1</sup>](https://www.acmicpc.net/problem/2741){:target="_blank"}
-![BOJ2739](/assets/images/2022/02/16/BOJ2741.jpg)
+![BOJ2741](/assets/images/2022/02/16/BOJ2741.jpg)
 
 ## 3. 접근법
 알고리즘 분류
@@ -30,7 +30,7 @@ Compiler: `C++20`
 ## 4. Library
 `bits/stdc++.h` - [Link<sup>2</sup>](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html){:target="_blank"}  
 (GNU C++ Standard Library Header - X)  
-(GCC Compiler Header - O)  
+(GCC Compiler Header - O)
 
 ## 5. Code
 ```cpp
@@ -70,7 +70,7 @@ void output()
 
 ## 6. 정리
 나 자신에게만 해당되는 이야기일 수 있지만,  
-컨테이너를 사용할때 Index가 0부터 시작하여  
+Container를 사용할때 Index가 0부터 시작하여  
 습관적으로 `for`문의 변수를 0부터 사용하는데,  
 이런 작은 습관으로 나중에 큰 낭패를 볼 수 있으니 유의하자.
 
