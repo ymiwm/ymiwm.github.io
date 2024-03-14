@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Project] CTI - DarkWeb Alert System(feat.OSINT) - 0"
+title:  "[Project] DarkWeb Alert System - 0"
 date:   2024-03-14 3:00:00 +0900
 categories: jekyll blog
 ---
