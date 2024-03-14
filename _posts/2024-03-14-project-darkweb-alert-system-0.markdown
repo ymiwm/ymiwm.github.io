@@ -31,7 +31,7 @@ categories: jekyll blog
 데이터 혹은 현상에 대한 증거(로그, 레지스터, 하이브 등)를 포함합니다.<a href="https://www.geeksforgeeks.org/windows-forensic-analysis/" target="_blank"><sup>[2]</sup></a>
 <br><br>
 - **DDW(Deep Dark Web)**이란?
-![Web Iceberg](/assets/images/2024/03/14/deep-web-iceberg.jpg)
+![Web Iceberg](/assets/images/2024/03/14/deep-web-iceberg.jpg)  
 그림과 같이 일반 브라우저 및 검색 엔진에 의해 찾을 수 없는 도메인을 포함,  
 익명성을 띄는 웹 사이트 일체를 말합니다.<a href="https://www.expressvpn.com/blog/dark-web-vs-deep-web/" target="_blank"><sup>[3]</sup></a>
 <br><br>
