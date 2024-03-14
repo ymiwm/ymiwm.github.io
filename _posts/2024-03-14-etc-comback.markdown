@@ -78,14 +78,8 @@ What I've done...
 결론은 블로그 다시 열심히 해보겠다는 강한 으지.  
 새로 시작하는 마음으로 AZ - Run Again 던져놓고 ㅌㅌ
 
-<style>
-    .parent {
-        display: inline-block;
-        max-width: 100%;
-        max-height: 100%;
-    }
-</style>
-
-<div class="parent">
-    <iframe src="https://www.youtube.com/embed/gcWrOd1-NMM" stype="width: 100%; height: 100%;" title="AZ - Run Again (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style="display: inline-block; width: 100%; max-width: 560px;">
+    <div style="position: relative; padding-bottom: 56.25%; /* 16:9 비율 */">
+        <iframe src="https://www.youtube.com/embed/gcWrOd1-NMM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 </div>
