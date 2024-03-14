@@ -75,7 +75,7 @@ What I've done...
 
 ## 5. Conclusion
 뭘 주저리주저리 썼는데, 그냥 생각 정리할 겸 의식의 흐름대로 써보았다.  
-결론은 블로그 다시 열심히 해보겠다는 강한 으지.
+결론은 블로그 다시 열심히 해보겠다는 강한 으지.  
 새로 시작하는 마음으로 AZ - Run Again 던져놓고 ㅌㅌ
 
-<iframe width="100%" height="" src="https://www.youtube.com/embed/gcWrOd1-NMM" title="AZ - Run Again (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/gcWrOd1-NMM" title="AZ - Run Again (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
