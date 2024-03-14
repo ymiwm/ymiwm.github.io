@@ -56,6 +56,7 @@ What I've done...
 - Mobile Sandbox
 - Dark Web Alert System
 - Final Project
+
 지금은 Dark Web Alert System 프로젝트 진행 중에 있다.
 시간 날때마다 날짜 조작해가며 정리해볼 생각이다.
 
@@ -75,3 +76,20 @@ What I've done...
 ## 5. Conclusion
 뭘 주저리주저리 썼는데, 그냥 생각 정리할 겸 의식의 흐름대로 써보았다.  
 결론은 블로그 다시 열심히 해보겠다는 강한 으지.
+새로 시작하는 마음으로 AZ - Run Again 던져놓고 ㅌㅌ
+
+<div id="area">
+  <iframe id="video" src="https://www.youtube.com/embed/gcWrOd1-NMM" title="AZ - Run Again (Official Music Video)" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
+</div>
+
+#area {
+  position: relative; /* absolute는 부모가 relative일 때 부모를 따라간다. */
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 */
+}
+
+#video {
+  position: absolute;
+  width: 100%; /* 부모에 맞게 꽉 채운다. */
+  height: 100%;
+}
