@@ -20,6 +20,7 @@ categories: jekyll blog
 수집한 자료에 대한 **개인적인 이해**를 기반으로 작성하였습니다.  
 (오류가 있을 경우 <ymiwm0322@kakao.com>{:target="_blank"}으로 알려주시면 감사하겠습니다.)
 
+
 ## 2. Research
 - **OSINT(Oper-Source INTelligence)**란?  
 실행 가능한 인텔리전스를 생성하기 위해  
