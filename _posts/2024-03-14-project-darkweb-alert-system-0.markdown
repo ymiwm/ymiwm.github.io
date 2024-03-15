@@ -22,7 +22,7 @@ categories: jekyll blog
 
 
 ## 2. Research
-- **OSINT(Oper-Source INTelligence)**란?  
+- **OSINT(Open-Source INTelligence)**란?  
 실행 가능한 인텔리전스를 생성하기 위해  
 오픈 소스(비공개 소스 및 공개적으로 사용 가능한 정보, Publicly Available Information(PAI))  
 에서 수집한 데이터의 컬렉션 및 분석 자료를 말합니다.<a href="https://en.wikipedia.org/wiki/Open-source_intelligence" target="_blank"><sup>[1]</sup></a>
