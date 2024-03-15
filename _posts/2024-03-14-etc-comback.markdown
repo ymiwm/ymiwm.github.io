@@ -77,5 +77,6 @@ What I've done...
 뭘 주저리주저리 썼는데, 그냥 생각 정리할 겸 의식의 흐름대로 써보았다.  
 결론은 블로그 다시 열심히 해보겠다는 강한 으지.  
 새로 시작하는 마음으로 AZ - Run Again 던져놓고 ㅌㅌ
+(누가 Jekyll Minima 테마에서 iframe 자동으로 resize하는 방법 좀 알려주라 😭)
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/gcWrOd1-NMM" title="AZ - Run Again (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
